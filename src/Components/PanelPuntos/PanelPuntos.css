@@ -1,0 +1,28 @@
+.resultado {
+  background: #fbc02d;
+  border: 3px solid #f9a825;
+  border-radius: 15px;
+  width: 260px;       
+  height: 70px;      
+  box-sizing: border-box;
+  padding: 15px;
+  color: #5d4037;
+  font: bold 18px Arial, sans-serif;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detalle-resultado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.texto-total {
+  font-size: 16px;
+  margin-left: 5px;
+}

@@ -1,0 +1,41 @@
+.carta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;    /* En pantallas pequeñas usa casi todo el ancho */
+  max-width: 320px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.8);
+  border: 4px solid; 
+  border-radius: 25px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.nombre-personaje, .monedas, .imagen {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.nombre-personaje {
+  height: 40px;
+  margin-bottom: 10px;
+  font-family: 'Arial Black', sans-serif;
+  text-transform: uppercase;
+}
+
+.imagen {
+  margin: 10px 0;
+  height: 180px;
+}
+
+.personaje {
+  max-width: 100%;
+  height: 180px;
+  /* Efecto sticker bordes blancos */
+  filter: drop-shadow(5px 5px 0 white) 
+          drop-shadow(-5px -5px 0 white) 
+          drop-shadow(5px -5px 0 white) 
+          drop-shadow(-5px 5px 0 white);
+}
+

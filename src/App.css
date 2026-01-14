@@ -1,0 +1,46 @@
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url("/public/fondo.png") center / cover no-repeat; 
+  color: white;
+}
+
+h2, h4 {
+  text-shadow: 2px 2px 5px black;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+h4 {
+  font-size: 2rem;
+  color: #ffdd00;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .contenedor-batalla {
+    flex-direction: column; /* Las cartas se apilan verticalmente */
+    gap: 20px;
+  }
+}
+
+.contenedor-batalla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  margin: 20px 0;
+}

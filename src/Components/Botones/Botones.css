@@ -1,0 +1,54 @@
+.contenedor-botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;         /* Espacio entre cada botón */
+  width: 100%;
+  margin: 40px 0 30px;
+  flex-wrap: wrap;  /* Si no caben bajan automáticamente */
+}
+
+.boton {
+  padding: 15px 40px;
+  border-radius: 50px;     
+  font: bold 1.1rem Arial, sans-serif;
+  cursor: pointer;
+  border: 2px solid white;
+  color: white;
+  text-transform: uppercase;
+  transition: 0.2 ease;
+}
+
+/* Efecto al pasar el ratón (solo si no está desactivado) */
+.boton:hover:not(:disabled) {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* Estilo general para cualquier botón bloqueado */
+.boton:disabled {
+  background-color: #95a5a6 !important; 
+  cursor: not-allowed;     /* Icono de prohibido */
+  filter: grayscale(1);
+  opacity: 0.6;
+  border-color: #bdc3c7;
+}
+
+.pelear {
+  background-color: #f39c12; 
+}
+
+.resolucion {
+  background-color: #c0392b; 
+}
+
+.reiniciar {
+  background-color: #7f8c8d; 
+}
+
+/* botón de reiniciar siempre se vea activo */
+.boton.reiniciar {
+  cursor: pointer;
+  opacity: 1;
+  filter: none;
+}
